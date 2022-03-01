@@ -1,0 +1,7 @@
+export ZDOTDIR=$HOME
+
+export PATH=/opt/homebrew/bin:$PATH
+
+export PATH=$HOME/.cargo/bin:$PATH
+
+export PATH=/Users/alexspina/Library/Python/3.8/bin:$PATH

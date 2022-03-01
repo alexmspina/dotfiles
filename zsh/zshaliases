@@ -1,0 +1,26 @@
+# Safari Alias
+alias safari="open -a safari"
+
+# Coding Time
+alias coding-time="safari && code-insiders ."
+
+# VS Code Insiders Edition
+alias code="code-insiders $1"
+
+# replace rm with trash
+alias rm="trash $1"
+
+# tmuxinator
+alias tmx="tmuxinator"
+
+# obsidian
+alias obsidian="open -a obsidian"
+
+# docker
+alias docker="lima nerdctl"
+
+# remove all images
+# alias rmimgs="docker rmi $(docker images -q)"
+
+# remove all containers
+# alias rmconts="docker rm $(docker ps -q)"
