@@ -4,4 +4,4 @@ export PATH=/opt/homebrew/bin:$PATH
 
 export PATH=$HOME/.cargo/bin:$PATH
 
-export PATH=/Users/alexspina/Library/Python/3.8/bin:$PATH
+export PATH=$HOME/Library/Python/3.8/bin:$PATH
