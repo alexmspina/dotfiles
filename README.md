@@ -45,32 +45,22 @@ The easiest way to install and manage global package installations on macOS is u
 The `./fonts` folder contains `.otf` font files that should be loaded into [Font Book](https://support.apple.com/guide/font-book/welcome/mac).
 
 ## homebrew
-The `./homebrew` folder contains a `Brewfile` that can be used to install homebrew packages. Create a symlink it in the home folder:
-```shell
-ln -s ./Brewfile ~/.Brewfile
-```
+The `./homebrew` folder contains a `Brewfile` that can be used to install homebrew packages.
 
-Then run the following command to install packages using this file:
+Run the following command to install packages using this file:
 ```shell
-brew bundle --global
+brew bundle --f ./homebrew/Brewfile
 ```
 
 If changes to the homebrew configuration are made, run the following command from the dotfile project folder:
 ```shell
-brew bundle --force --file ./Brewfile
+brew bundle --force --file ./homebrew/Brewfile
 ```
 
 Then commit and push changes to GitHub.
 
 ## zsh
-The `./zsh` folder contains zsh configuration files. Create symlinks for all of these files in the home folder:
-```shell
-ln -s ./zshrc ~/.zshrc
-ln -s ./zshaliases ~/.zshaliases
-ln -s ./zshenv ~/.zshenv
-ln -s ./zprofile ~/.zprofile
-```
-
+The `./zsh` folder contains zsh configuration files. These files should be saved to the home directory.
 
 ## terminal
-The `./terminal` contains files for terminal emulators and prompt customization. First 
+The `./terminal` contains files for terminal emulators and prompt customization. Copy the `starship.toml` to `~/.config/starship.toml`. To install the iTerm profile, open iTerm2, then open the Preferences menu. Select the Profiles tab, click on Other Action near the bottom left, and select Import JSON Profiles. Then browse for the `iterm2_profile.json` file in this repo. To set it as the default profile, click on it then select Set as default from the Other Actions menu.
