@@ -4,9 +4,6 @@ alias safari="open -a safari"
 # Coding Time
 alias coding-time="safari && code-insiders ."
 
-# VS Code Insiders Edition
-alias code="code-insiders $1"
-
 # replace rm with trash
 alias rm="trash $1"
 
