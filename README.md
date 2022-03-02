@@ -66,10 +66,7 @@ The `./zsh` folder contains zsh configuration files. These files should be saved
 The `./terminal` contains files for terminal emulators and prompt customization.
 
 ### xterm-256 colors and italics
-To enable terminal colors and italics in iTerm2 and tmux, run the following command:
-```shell
-tic ./terminal/terminfo-xterm-256color-italic
-```
+To enable xterm-256color and italics in iTerm2 and tmux, follow this [post.](https://medium.com/@dubistkomisch/how-to-actually-get-italics-and-true-colour-to-work-in-iterm-tmux-vim-9ebe55ebc2be)
 
 ### tmux
 The file `./terminal/.tmux.conf` configures tmux so it can display xterm 256 color schemes and italic in-session. It also configures fig to work with tmux.
