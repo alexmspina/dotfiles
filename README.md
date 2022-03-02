@@ -75,4 +75,4 @@ The file `./terminal/.tmux.conf` configures tmux so it can display xterm 256 col
 Copy the `starship.toml` to `~/.config/starship.toml`.
 
 ### iTerm2
-To install the iTerm profile, open iTerm2, then open the Preferences menu. Select the Profiles tab, click on Other Action near the bottom left, and select Import JSON Profiles. Then browse for the `iterm2_profile.json` file in this repo. To set it as the default profile, click on it then select Set as default from the Other Actions menu.
+To install the iTerm profile, open iTerm2, then open the Preferences menu. Select the Profiles tab, click on Other Action near the bottom left, and select Import JSON Profiles. Then browse for the `iterm2_profile.json` file in this repo. To set it as the default profile, click on it then select Set as default from the Other Actions menu. Don't forget to set iTerm's appearance to Minimal to set the top bar to the terminal background colors.
