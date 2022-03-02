@@ -63,4 +63,19 @@ Then commit and push changes to GitHub.
 The `./zsh` folder contains zsh configuration files. These files should be saved to the home directory.
 
 ## terminal
-The `./terminal` contains files for terminal emulators and prompt customization. Copy the `starship.toml` to `~/.config/starship.toml`. To install the iTerm profile, open iTerm2, then open the Preferences menu. Select the Profiles tab, click on Other Action near the bottom left, and select Import JSON Profiles. Then browse for the `iterm2_profile.json` file in this repo. To set it as the default profile, click on it then select Set as default from the Other Actions menu.
+The `./terminal` contains files for terminal emulators and prompt customization.
+
+### xterm-256 colors and italics
+To enable terminal colors and italics in iTerm2 and tmux, run the following command:
+```shell
+tic ./terminal/terminfo-xterm-256color-italic
+```
+
+### tmux
+The file `./terminal/.tmux.conf` configures tmux so it can display xterm 256 color schemes and italic in-session. It also configures fig to work with tmux.
+
+### Prompt
+Copy the `starship.toml` to `~/.config/starship.toml`.
+
+### iTerm2
+To install the iTerm profile, open iTerm2, then open the Preferences menu. Select the Profiles tab, click on Other Action near the bottom left, and select Import JSON Profiles. Then browse for the `iterm2_profile.json` file in this repo. To set it as the default profile, click on it then select Set as default from the Other Actions menu.
