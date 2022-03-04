@@ -8,6 +8,8 @@ on:
 env:
   GITHUB_TOKEN: ${{ secrets.TAGGING_TOKEN }}
   WITH_V: true
+  DEFAULT: patch
+  
 
 jobs:
   tag:
