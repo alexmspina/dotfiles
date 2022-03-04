@@ -28,6 +28,8 @@ Install iTerm2. It can be found [here.](https://iterm2.com)
 ## Editor
 Download and install Vs Code which can be found [here.](https://code.visualstudio.com)
 
+Neovim is also available and installed via the Brewfile below.
+
 ## AWS
 Version 2 of the AWS cli should be installed using the instructions found [here.](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
@@ -40,6 +42,15 @@ The easiest way to install and manage global package installations on macOS is u
 ```
 
 # Configs
+
+## editor
+Configs for different text editors and IDEs.
+
+### neovim
+Copy `./editor/nvim/` into the `~/.config/` folder using the following command:
+```shell
+cp ./editor/nvim ~/.config/.
+```
 
 ## fonts
 The `./fonts` folder contains `.otf` font files that should be loaded into [Font Book](https://support.apple.com/guide/font-book/welcome/mac).
