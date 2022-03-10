@@ -30,7 +30,7 @@ Download and install Vs Code which can be found [here.](https://code.visualstudi
 
 Don't forget to disable the Apple press and hold feature for VS Code only so you can hold down vim navigation keys and move multiple spaces at a time. See details [here](https://stackoverflow.com/a/44010683/10974954).
 ```shell
-defaults write com.microsoft.VSCode Apple PressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 ```
 
 Neovim is also available and installed via the Brewfile below.
