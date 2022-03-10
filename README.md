@@ -28,6 +28,11 @@ Install iTerm2. It can be found [here.](https://iterm2.com)
 ## Editor
 Download and install Vs Code which can be found [here.](https://code.visualstudio.com)
 
+Don't forget to disable the Apple press and hold feature for VS Code only so you can hold down vim navigation keys and move multiple spaces at a time. See details [here](https://stackoverflow.com/a/44010683/10974954).
+```shell
+defaults write com.microsoft.VSCode Apple PressAndHoldEnabled -bool false
+```
+
 Neovim is also available and installed via the Brewfile below.
 
 ## AWS
@@ -49,7 +54,8 @@ Configs for different text editors and IDEs.
 ### neovim
 Copy `./editor/nvim/` into the `~/.config/` folder using the following command:
 ```shell
-cp ./editor/nvim ~/.config/.
+mkdir ~/.config/nvim
+cp -r ./editor/nvim ~/.config/nvim
 ```
 
 ## fonts
