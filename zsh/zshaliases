@@ -16,6 +16,16 @@ alias obsidian="open -a obsidian"
 # docker
 alias docker="lima nerdctl"
 
+# thefuck
+eval $(thefuck --alias)
+alias shoot="fuck"
+
+# Open Goland from terminal
+alias goland="open -na \"GoLand.app\" --args \"$@\""
+
+# Replace goimports with gosimports
+alias goimports="gosimports"
+
 # remove all images
 # alias rmimgs="docker rmi $(docker images -q)"
 

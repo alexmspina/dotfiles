@@ -54,7 +54,7 @@ brew bundle --f ./homebrew/Brewfile
 
 If changes to the homebrew configuration are made, run the following command from the dotfile project folder:
 ```shell
-brew bundle --force --file ./homebrew/Brewfile
+brew bundle dump --force --file ./homebrew/Brewfile
 ```
 
 Then commit and push changes to GitHub.
