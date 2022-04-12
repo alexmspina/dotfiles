@@ -70,7 +70,8 @@ Global user settings and extensions are managed using the Settings Sync.
 Projects can use different settings depending on conventions, languages, tools, dependencies, etc., etc. Workspace settings can be placed in the .vscode/settings.json file located in the root of a project.
 
 ##### extensions
-Project specific extensions can use the same workspace settings file to store recommended extensions using the `"recommendations"` block. Run the `Extensions: Configure Recommended Extensions (Workspace Folder)` to bring the extensions GUI where you can select the extensions.  
+Project specific extensions can be added to the project workspace settings as recommended extensions. Run the `Extensions: Configure Recommended Extensions (Workspace Folder)` to create a new file `.vscode/extensions.json` with empty `"recommendations"` and `"unwantedRecommendations`" array blocks. The easiest way to add extensions to the list of workspace recommendations is to use the `Extensions` management GUI, accessed from the left-hand side menu. Search for the extensions you want to install, click on them, then click on the menu gear icon, and finally select `Add to Workspace Recommendations`.
+
 
 ### neovim
 Copy `./editor/nvim/` into the `~/.config/` folder using the following command:
