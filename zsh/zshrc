@@ -3,6 +3,10 @@
 # Please make sure this block is at the start of this file.
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
 #### END FIG ENV VARIABLES ####
+
+# load custom PATH additions
+source $HOME/.zshpathvar
+
 # history completion
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
@@ -40,5 +44,3 @@ cp $HOME/.zshenv $ZDOTDIR/.zshenv.backup
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
