@@ -1,8 +1,9 @@
-
 # This file adds to the system PATH variable
 
+# Adds homebrew installed binary folder
 export PATH=/opt/homebrew/bin:$PATH
 
+# Adds language specific installed binary folders
 export PATH=$HOME/.cargo/bin:$PATH
 
 export PATH=$HOME/Library/Python/3.8/bin:$PATH
