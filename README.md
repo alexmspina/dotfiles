@@ -51,6 +51,27 @@ The easiest way to install and manage global package installations on macOS is u
 ## editor
 Configs for different text editors and IDEs.
 
+### VS Code
+
+#### Global configuration
+##### settings
+Settings that are common to all VS Code projects, regardless of the languages or settings used in the source code, should be saved as `User settings`. These can be modified using the settings editor GUI or by editing the `settings.json` file, both which can be accessed from the VS Code command palette. To open the command palette press `command + shift + P`. Then to open these settings editor methods type `Preferences: Open Settings`. Select the option with `(UI)` to open the GUI editor or select the option with `(JSON)` to open the `settings.json` file.
+
+The global settings file is stored at the following location on MacOS: `$HOME/Library/Application\ Support/Code/User/settings.json`.
+
+##### extensions
+Global extensions, like settings, are extensions that are be used by all workspaces regardless of the languages or dependencies used in the project. You can manage global extensions using the extensions icon in the menu on the left-hand side.
+
+##### remote storage
+Global user settings and extensions are managed using the Settings Sync.
+
+#### Workspace configuration
+##### settings
+Projects can use different settings depending on conventions, languages, tools, dependencies, etc., etc. Workspace settings can be placed in the .vscode/settings.json file located in the root of a project.
+
+##### extensions
+Project specific extensions can use the same workspace settings file to store recommended extensions using the `"recommendations"` block. Run the `Extensions: Configure Recommended Extensions (Workspace Folder)` to bring the extensions GUI where you can select the extensions.  
+
 ### neovim
 Copy `./editor/nvim/` into the `~/.config/` folder using the following command:
 ```shell
