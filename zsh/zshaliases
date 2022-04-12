@@ -1,9 +1,6 @@
 # Safari Alias
 alias safari="open -a safari"
 
-# Coding Time
-alias coding-time="safari && code-insiders ."
-
 # replace rm with trash
 alias rm="trash $1"
 
